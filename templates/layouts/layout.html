@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Dirty Tweet Deleter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .navbar-inverse {
+            background-color: #0084b4;
+            border-color: #00516f;
+            border: 0px solid transparent !important;
+            border-radius: 0px !important;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                Dirty Tweet Deleter
+            </a>
+        </div>
+        <div class="navbar-right" style="margin-right: 0px">
+            {{if .NickName }}
+                <a href="/logout"><button type="button" class="btn btn-danger navbar-btn">Logout</button></a>
+            {{else}}
+                <a href="/login"><button type="button" class="btn btn-default navbar-btn">Login</button></a>
+            {{end}}
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3">
+            {{ yield }}
+        </div>
+    </div>
+</div>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div>
+    <div class="jumbotron" style="padding-left: 50px; padding-right: 50px;">
+        <img src="{{.AvatarURL}}" style="display: block; margin-left: auto; margin-right: auto; border-radius:50%;"/>
+        <h3 style="text-align: center">Hello, @{{.NickName}}!</h3>
+
+        <hr>
+
+        <div class="input-group" style="display:block; text-align: center;">
+            <h5>Please upload your twitter archive .csv file:</h5>
+            <form enctype="multipart/form-data" accept=".csv" action="/deleteDirtyTweets" method="POST">
+                <input class="form-control" type="file" name="uploadfile" />
+                <input type="hidden" name="token" value="{{.}}" />
+                <br/><br/>
+                <button class="btn btn-danger" type="submit" value="Upload & Delete Tweets">Delete Tweets</button>
+                <br/><br/>
+                <em>Note: This may take some time, depending on the amount of dirty tweets you have.</em>
+            </form>
+        </div>
+    </div>
+</div>

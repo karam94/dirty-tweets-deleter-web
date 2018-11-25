@@ -1,0 +1,7 @@
+{
+  "consumerKey": "YOUR TWITTER APP CONSUMER KEY",
+  "consumerSecret": "YOUR TWITTER APP CONSUMER SECRET",
+  "callbackUrl": "YOUR TWITTER APP CALLBACK URL",
+  "cookieHashKey": "YOUR COOKIE HASH KEY",
+  "cookieBlockKey": "YOUR COOKIE BLOCK KEY"
+}
