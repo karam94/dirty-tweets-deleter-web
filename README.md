@@ -17,7 +17,7 @@ Providing you have [Go](https://golang.org/) installed on your machine, you can 
 As this application was created for learning purposes, I also created a similar console based alternative that also allows you to delete all tweets should you wish to do so, can be found [here](https://github.com/karam94/dirty-tweets-deleter).
 
 ## Credits
-- [go-twitter by dghubble](github.com/dghubble/go-twitter)
-- [securecookie by gorilla](github.com/gorilla/securecookie)
-- [iris by kataras](github.com/kataras/iris)
+- [go-twitter by dghubble](https://github.com/dghubble/go-twitter)
+- [securecookie by gorilla](https://github.com/gorilla/securecookie)
+- [iris by kataras](https://github.com/kataras/iris)
 - [goth by markbates](https://github.com/markbates/goth)
